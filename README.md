@@ -19,7 +19,7 @@ A comprehensive face recognition system using Python and the face_recognition li
 
 1. Clone this repository:
 ```bash
-git clone <repository-url>
+git clone https://github.com/mingqxu7/faceRecognition.git
 cd faceRecognition
 ```
 
