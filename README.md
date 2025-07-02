@@ -5,10 +5,13 @@ A comprehensive face recognition system using Python and the face_recognition li
 ## Features
 
 - **Deep Learning Face Recognition**: Uses state-of-the-art face encodings with 99.38% accuracy
+- **Group Photo Recognition**: Detect and identify multiple faces in a single image
+- **Expandable Celebrity Database**: Easily add new celebrities by downloading their photos
 - **Facial Landmark Detection**: Visualizes 68 facial landmark points
 - **Multiple Recognition Methods**: Compares deep learning vs landmark-based approaches
 - **Batch Processing**: Process multiple images at once
 - **Visual Analysis**: Side-by-side comparisons with similarity scores
+- **Real-world Testing**: Process actual group photos and magazine images
 
 ## Requirements
 
@@ -54,9 +57,11 @@ jupyter notebook
    - Create an `images/` directory
    - Download celebrity images automatically from Wikipedia Commons
    - Load and encode known faces
-   - Demonstrate face recognition
+   - Demonstrate single and group face recognition
+   - Add new celebrities to the database (e.g., Shameless cast)
+   - Process real-world group photos
    - Compare different recognition methods
-   - Analyze accuracy
+   - Analyze accuracy and performance
 
 ## Key Components
 
@@ -65,17 +70,33 @@ jupyter notebook
 - Compares unknown faces against known celebrity database
 - Achieves high accuracy with proper threshold tuning
 
-### 2. Facial Landmark Detection
+### 2. Group Photo Recognition
+- Detects multiple faces in a single image
+- Identifies each person with confidence scores
+- Draws bounding boxes with color-coded results (green=recognized, red=unknown)
+
+### 3. Expandable Celebrity Database
+- Download celebrity photos from verified URLs
+- Automatically encode faces and add to database
+- Support for adding TV show casts (e.g., Shameless actors)
+- Easy to extend with new celebrities
+
+### 4. Facial Landmark Detection
 - Detects 68 facial landmark points
 - Visualizes features like eyes, nose, mouth, chin
 - Color-coded visualization for different facial features
 
-### 3. Comparison Analysis
+### 5. Comparison Analysis
 - Landmark-based vs Deep Learning methods
 - Shows why geometric features alone aren't sufficient
 - Demonstrates superiority of deep learning approach
 
-### 4. Accuracy Analysis
+### 6. Real-world Testing
+- Process magazine photos and group images
+- Handle various lighting conditions and poses
+- Test with actual celebrity group photos
+
+### 7. Accuracy Analysis
 - Tests different tolerance thresholds
 - Calculates false positives and false negatives
 - Helps optimize threshold selection
@@ -110,13 +131,28 @@ The face_recognition library achieves:
 - **Matplotlib**: Plotting and visualization
 - **Pandas**: Data analysis and visualization
 
+## Adding New Celebrities
+
+The notebook makes it easy to expand the celebrity database:
+
+1. **Find working image URLs** for the celebrities you want to add
+2. **Run the download cells** to fetch their photos
+3. **Encode their faces** automatically into the database
+4. **Test recognition** on new group photos
+
+Example celebrities already included:
+- **Tech Leaders**: Barack Obama, Elon Musk, Bill Gates, Mark Zuckerberg, Jeff Bezos
+- **Athletes**: Tiger Woods
+- **TV Stars**: Shameless cast (William H. Macy, Emmy Rossum, Jeremy Allen White)
+
 ## Future Enhancements
 
-- Add more celebrities to the database
+- Add more celebrities and TV show casts to the database
 - Implement real-time video recognition
-- Create a web interface
+- Create a web interface for easy photo uploads
 - Add age and emotion detection
 - Implement face verification (1:1) vs identification (1:N)
+- Support for custom training on personal photo collections
 
 ## License
 
