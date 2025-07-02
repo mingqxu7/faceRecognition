@@ -58,7 +58,7 @@ jupyter notebook
    - Download celebrity images automatically from Wikipedia Commons
    - Load and encode known faces
    - Demonstrate single and group face recognition
-   - Add new celebrities to the database (e.g., Shameless cast)
+   - Add new celebrities to the database (Shameless cast members)
    - Process real-world group photos
    - Compare different recognition methods
    - Analyze accuracy and performance
@@ -78,7 +78,7 @@ jupyter notebook
 ### 3. Expandable Celebrity Database
 - Download celebrity photos from verified URLs
 - Automatically encode faces and add to database
-- Support for adding TV show casts (e.g., Shameless actors)
+- Currently includes 6 celebrities: Obama, Musk, Tiger Woods, and 3 Shameless actors
 - Easy to extend with new celebrities
 
 ### 4. Facial Landmark Detection
@@ -141,7 +141,8 @@ The notebook makes it easy to expand the celebrity database:
 4. **Test recognition** on new group photos
 
 Example celebrities already included:
-- **Tech Leaders**: Barack Obama, Elon Musk, Bill Gates, Mark Zuckerberg, Jeff Bezos
+- **Political Leaders**: Barack Obama
+- **Tech Entrepreneurs**: Elon Musk
 - **Athletes**: Tiger Woods
 - **TV Stars**: Shameless cast (William H. Macy, Emmy Rossum, Jeremy Allen White)
 
